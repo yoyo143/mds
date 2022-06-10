@@ -12,7 +12,6 @@ else
 POSIXSHELL :=
 endif
 
-export ARCH:=$(shell uname -m)
 
 ifeq ($(ARCH), arm64) 
 DC_FILE:=-f docker-compose.M1.yaml
